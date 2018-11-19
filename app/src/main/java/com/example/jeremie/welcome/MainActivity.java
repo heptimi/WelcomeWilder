@@ -27,20 +27,25 @@ public class MainActivity extends AppCompatActivity {
 
 
         final TextView twcongrat = findViewById(R.id.twcongrat);
+        final Toast buttontoast = Toast.makeText(getApplicationContext(), " Please fill your firstname and lastname!", Toast.LENGTH_SHORT);
 
-        final Toast buttontoast = Toast.makeText(getApplicationContext(), " Please fill firstname and lastname", 4);
 
             checkBox.setOnClickListener(new View.OnClickListener() {
 
                 public void onClick(View view){
 
                     if (checkBox.isChecked()) {
+                    button.setEnabled(true) ;
                     etFirstname.setEnabled(true);
                     etLastName.setEnabled(true);
                     }
                     else{
                     etFirstname.setEnabled(false);
                     etLastName.setEnabled(false);
+                    twcongrat.setText("");
+                    etLastName.getText().clear();
+                    etFirstname.getText().clear();
+
                     }
                 }
 
