@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Welcome</string>
+    <string name="Firstname">Firstname</string>
+    <string name="Lastname">Lastname</string>
+    <string name="Welcome">Welcome to the wild code school</string>
+    <string name="Yes">Yes i want to be a wilder</string>
+</resources>
