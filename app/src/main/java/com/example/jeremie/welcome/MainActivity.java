@@ -41,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                     else{
                     etFirstname.setEnabled(false);
+                    button.setEnabled(false) ;
                     etLastName.setEnabled(false);
                     twcongrat.setText("");
-                    etLastName.getText().clear();
-                    etFirstname.getText().clear();
+                    
 
                     }
                 }
